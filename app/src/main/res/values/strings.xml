@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TravelAPP</string>
+    <string name="translate">Translate</string>
+    <string name="weather_forecast">Weather forecast</string>
+    <string name="map">Map</string>
+    <string name="go_back_from_mappage">Go back</string>
+    <string name="go_back_from_translatepage">Go Back</string>
+    <string name="go_back_from_weatherpage">Go back</string>
+    <string name="enter_text">Enter danish text to translate</string>
+    <string name="translate_language">Translate</string>
+    <string name="translated_language"> </string>
+    <string name="translate_from_danish_to_english">Translate danish to english</string>
+    <string name="weather_forecast_in_any_city">Weather forecast in any city</string>
+    <string name="enter_city">Enter city</string>
+    <string name="enter_country_code">Country code</string>
+    <string name="get_weather_forecast">Get weather forecast</string>
+</resources>

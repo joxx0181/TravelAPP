@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000034"
+    android:backgroundTint="#000034"
+    tools:context=".ActivityWeather">
+
+    <ImageView
+        android:layout_width="169dp"
+        android:layout_height="133dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/weather_topimage"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="119dp"
+        android:gravity="center"
+        android:text="@string/weather_forecast_in_any_city"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <EditText
+        android:id="@+id/enterCity"
+        android:layout_width="245dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:hint="@string/enter_city"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textColorHint="#607D8B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <EditText
+        android:id="@+id/enterCountryCode"
+        android:layout_width="155dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:hint="@string/enter_country_code"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textColorHint="#607D8B"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/weatherForecastButton"
+        android:layout_width="420dp"
+        android:layout_height="94dp"
+        android:layout_centerInParent="true"
+        android:onClick="TodayWeatherForecast"
+        android:text="@string/get_weather_forecast"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <ScrollView
+        android:layout_width="330dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789">
+
+        <TextView
+            android:id="@+id/forecastView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/returnWeatherButton"
+        android:layout_width="143dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/go_back_from_weatherpage"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
